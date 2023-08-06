@@ -1,0 +1,319 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(144, 118, 168);
+}
+:root{
+    --navbar-height: 55px;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+
+}
+#logo{
+    margin: 24px 30px;
+}
+#logo img{
+    height: 60px;
+    width: 100px;
+    margin: -22px 3px;
+
+}
+#logo img:hover{
+    transform: scale(1.5);
+    cursor:pointer;
+
+}
+#navbar ul{
+    display:flex
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Newsreader', serif;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 150px;
+    height:330px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+     background: url('http://residencestyle.com/wp-content/uploads/2019/12/Focus-on-Lighting.jpg') no-repeat center/cover;
+     /* background: url('https://windhambrannon.com/wp-content/uploads/2021/08/restaurant.jpg') no-repeat center/cover; */
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+   
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Newsreader', serif;
+}
+#services-container{
+    margin: 90px;
+}
+#services{
+    display: flex;
+    margin: -15px;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 10px;
+    border-radius: 24px;
+    background-color: rgb(241, 236, 185);
+    transition: transform 0.3s ease-in;
+}
+#services .box:hover{
+    transform: scale(1.1);
+
+}
+#services .box img{
+    height: 210px;
+    width: 300px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  /* #services .box img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+  } */
+  .btn{
+    padding: 6px 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    color:whitesmoke;
+    background-color: rgb(29, 28, 28);
+    margin: 16px;
+    height: 35px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(80, 78, 78);
+    cursor: pointer;
+}
+#contact{
+    position: relative;
+
+}
+#Contact::before{
+    /* display: block; */
+    content: "";
+    position: absolute;
+    background: url('contact.jpg') no-repeat center center/cover;
+    width:100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.8;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+#contact-box input{
+    display: flex;
+    width: 100;
+    padding: 0.5rem;
+    /* border: none; */
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: black
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 20px;
+    font-family: sans-serif;
+   color: black;
+}
+#about-us{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    height: 300px;
+    background-color: rgb(31, 10, 10);
+}
+.us{
+    list-style: none;
+    font: size 1.2rem;
+}
+.h{
+    font-size: 1.3rem;
+    text-align: center;
+    padding:5px 20px;
+    color: rgb(124, 228, 228);;
+}
+.about ul a{
+    /* display: block; */
+    display: flex;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Newsreader', serif;
+
+}
+.about ul a:hover{
+    color:rgb(182, 241, 241);
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+.h-secondry{
+    font-size:2.1rem ;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Newsreader', serif;
+    
+}
+.center{
+    text-align:center;
+    font-family: 'Newsreader', serif;
+}
+hr { 
+    display: block;
+    /* margin-top: 0.5em;
+    margin-bottom: 0.5em; */
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    border-style: inset;
+    border-width: 1px;
+    color: grey;
+   
+  } 
+footer{
+    background-color: rgb(5, 5, 5);
+    color: rgb(252, 252, 252);
+    padding: 15px 20px;
+    font-weight: bold;
+}
+footer div:hover{
+    color: rgb(155, 153, 153);
+    cursor: pointer;
+}
+
+
+
+
+#client-section{
+    /* height: 340px; */
+    margin: 10px;
+}
+#client-section::before{
+    content: "";
+    background: url('https://is.gd/ZU0TOx') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-item{
+    padding: 22px;
+}
+#clients img{
+    height: 180px;
+    border-radius: 35px;
+    padding: 10px;
+}
+#clients img:hover{
+    cursor:pointer;
+    box-shadow: 4px 4px 3px 3px grey;
+    width: 150px;
+    height: 150px;
+}
+#loadMore {
+    width: 200px;
+    color: #fff;
+    display: block;
+
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    padding-top: 0;
+    align-items: end;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: rgb(44, 44, 111);
+    transition: .3s;
+  }
+  #loadMore:hover {
+    color: blue;
+    background-color: #fff;
+    border: 1px solid blue;
+    text-decoration: none;
+  }
+
+
+
+
+
